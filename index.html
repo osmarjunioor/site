@@ -46,6 +46,10 @@
  			 width: 100%;
  			 height: auto;
 		}
+			
+		.btn-sep {
+                  padding: 25px 60px 25px 120px;
+                }
 		
 		.menu ul li{
 			display:inline-block;
@@ -59,7 +63,7 @@
 			padding:20px;
 			color:#fff;
 		}
-        .button {
+     /*   .button {
             background-color: white;
             border: none;
             color: black;
@@ -71,21 +75,75 @@
             margin: 4px 2px;
             cursor: pointer;
 	    position: center center;}
-      }			
-		.footer{
-			width:100%;
-			background:yellow;
-			text-align:center;
-		}
-		
-		@media screen and (max-width: 700px) {
-			.sidebar, .content-inner, .content{
-				float: none;
-				width: 100%;
-				margin-right:0;
-			}
-		}
-			
+      }			*/
+
+                .btn {
+                  border: none;
+                  font-family: 'Lato';
+                  font-size: inherit;
+                  color: inherit;
+                  background: none;
+                  cursor: pointer;
+                  padding: 25px 80px;
+                  display: inline-block;
+                  margin: 5px 0px;
+                  text-transform: uppercase;
+                  letter-spacing: 1px;
+                  font-weight: 700;
+                  position: relative;
+                  -webkit-transition: all 1s;
+                  -moz-transition: all 1s;
+                  transition: all 1s;
+                }
+                
+                 .btn:after {
+                  content: '';
+                  position: absolute;
+                  z-index: -1;
+                  -webkit-transition: all 0.3s;
+                  -moz-transition: all 0.3s;
+                  transition: all 0.3s;
+                }
+
+                .btn:before {
+                  font-family: 'FontAwesome';
+                  speak: none;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-variant: normal;
+                  text-transform: none;
+                  line-height: 1;
+                  position: relative;
+                  -webkit-font-smoothing: antialiased;
+                }
+                
+                .btn-1 {
+                  background: #3498db;
+                  color: #fff;
+                }
+
+                .btn-1:hover {
+                  background: Transparent;
+                }
+
+                .btn-1:active {
+                  background: #2980b9;
+                  top: 2px;
+                }
+
+                .btn-1:before {
+                  position: absolute;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+                  line-height: 3;
+                  font-size: 140%;
+                  width: 60px;
+                }
+                
+                .icon-info:before {
+                  content: "\f10b";
+                }
           
 	  .button4 {border-radius: 12px;}
 	  .button4:hover {background-color: Transparent; color: white; border: 2px solid white; position: center;}
@@ -97,26 +155,23 @@
 		</style>
 		</head>
 	<body>
-			<div class="content">
-				<div class="content-inner">
-							<center>
-							  <button class="button button4">Testemksdfhduskdf</button><br>
-							  <button class="button button4">Testemksdfhduskdf</button><br>
-							  <button class="button button4">Testemksdfhduskdf</button><br>
-							  <button class="button button4">Testemksdfhduskdf</button><br>
-					</center>
-				</div>
-				
-			</div>
-			
+
 			<br style="clear:both">
 		</div>
 				<center>
-						          <button class="button button4">Testemksdfhduskdf</button><br>
+						      <button class="button button4">Testemksdfhduskdf</button><br>
 							  <button class="button button4">Testemksdfhduskdf</button><br>
 							  <button class="button button4">Testemksdfhduskdf</button><br>
 							  <button class="button button4">Testemksdfhduskdf</button><br>
-		</center>
+                              
+                              <center>
+                              <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+                              <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+                              <button class="btn btn-1 btn-sep icon-info">Button</button><br>
+                              <button class="btn btn-1 btn-sep icon-cart">Button</button><br>
+                              <button class="btn btn-1 btn-sep icon-heart">Button</button><br>
+                              <button class="btn btn-1 btn-sep icon-send">Button</button><br>
+                              </center>
 		
 	</body>
 </html>
